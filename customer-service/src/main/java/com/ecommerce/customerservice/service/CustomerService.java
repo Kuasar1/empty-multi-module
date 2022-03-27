@@ -26,8 +26,7 @@ public class CustomerService {
             log.debug("getCustomerById REQ:{}",id);
             boolean exists = customerRepository.findById(id).isPresent();
             if(exists) {
-                //return new ResponseEntity<>(customerRepository.getById(id), HttpStatus.OK);
-                return new ResponseEntity<>("OK", HttpStatus.OK);
+                return new ResponseEntity<>(customerRepository.getById(id), HttpStatus.OK);
             } else {
                 return new ResponseEntity<>("Customer with ID " + id + " does not exist", HttpStatus.BAD_REQUEST);
             }

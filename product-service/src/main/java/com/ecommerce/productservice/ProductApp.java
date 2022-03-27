@@ -1,13 +1,13 @@
-package com.ecommerce.customerservice;
+package com.ecommerce.productservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = {"com.ecommerce.*"})
-public class App {
+@SpringBootApplication
+public class ProductApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(ProductApp.class, args);
     }
 
 }
